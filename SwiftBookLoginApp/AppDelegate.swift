@@ -1,9 +1,4 @@
-//
-//  AppDelegate.swift
-//  SwiftBookLoginApp
-//
 //  Created by Daniyar Mamadov on 12.08.2022.
-//
 
 import UIKit
 
