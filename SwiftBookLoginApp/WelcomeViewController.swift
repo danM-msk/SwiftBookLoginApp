@@ -4,7 +4,7 @@ import UIKit
 
 final internal class WelcomeViewController: UIViewController {
     
-    private let verticalStackView: UIStackView = {
+    internal let verticalStackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
         view.distribution = .fillEqually
@@ -13,15 +13,15 @@ final internal class WelcomeViewController: UIViewController {
         return view
     }()
     
-    private lazy var welcomeLabel: UILabel = {
+    internal lazy var welcomeLabel: UILabel = {
         getLabel()
     }()
     
-    private lazy var emojiLabel: UILabel = {
+    internal lazy var emojiLabel: UILabel = {
         getLabel()
     }()
     
-    private lazy var logoutButton: UIButton = {
+    internal lazy var logoutButton: UIButton = {
         let view = UIButton()
         view.setTitle("Log Out", for: .normal)
         view.setTitleColor(.white, for: .normal)
@@ -45,14 +45,7 @@ final internal class WelcomeViewController: UIViewController {
         configureUI()
     }
     
-    private func getLabel() -> UILabel {
-        let view = UILabel()
-        view.text = "👋🏼"
-        view.textAlignment = .center
-        view.textColor = .white
-        view.font = .systemFont(ofSize: 24, weight: .bold)
-        return view
-    }
+ 
     
     @objc private func logoutButtonTapped() {
         let loginViewController = LoginViewController()
@@ -61,31 +54,5 @@ final internal class WelcomeViewController: UIViewController {
         present(loginViewController, animated: true, completion: nil)
     }
     
-    private func makeGradientBackground() {
-        view.backgroundColor = .clear
-        let gradientlayer = CAGradientLayer()
-        gradientlayer.frame = self.view.bounds
-        gradientlayer.colors = [UIColor.systemPink.cgColor, UIColor.purple.cgColor]
-        self.view.layer.insertSublayer(gradientlayer, at: 0)
-    }
-    
-    private func configureUI() {
-        view.addSubview(verticalStackView)
-        setup(stackView: verticalStackView, arrangedSubview: welcomeLabel, emojiLabel, logoutButton)
-        addConstraints()
-    }
-    
-    private func setup(stackView: UIStackView, arrangedSubview: UIView...) {
-        arrangedSubview.forEach {
-            stackView.addArrangedSubview($0)
-        }
-    }
-    
-    private func addConstraints() {
-        NSLayoutConstraint.activate([
-            verticalStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            verticalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            verticalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
-        ])
-    }
+
 }

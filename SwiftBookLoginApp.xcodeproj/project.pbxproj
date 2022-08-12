@@ -13,6 +13,8 @@
 		5CFFFEBC28A66B6C00A9F8CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CFFFEBB28A66B6C00A9F8CE /* Assets.xcassets */; };
 		5CFFFEBF28A66B6C00A9F8CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFFFEBD28A66B6C00A9F8CE /* LaunchScreen.storyboard */; };
 		5CFFFEC728A681F200A9F8CE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFFFEC628A681F200A9F8CE /* WelcomeViewController.swift */; };
+		5CFFFECB28A69B7F00A9F8CE /* LoginVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFFFECA28A69B7F00A9F8CE /* LoginVC+Layout.swift */; };
+		5CFFFECD28A69CFC00A9F8CE /* WelcomeVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFFFECC28A69CFC00A9F8CE /* WelcomeVC+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5CFFFEBE28A66B6C00A9F8CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CFFFEC028A66B6C00A9F8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CFFFEC628A681F200A9F8CE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5CFFFECA28A69B7F00A9F8CE /* LoginVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Layout.swift"; sourceTree = "<group>"; };
+		5CFFFECC28A69CFC00A9F8CE /* WelcomeVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeVC+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				5CFFFEB228A66B6A00A9F8CE /* AppDelegate.swift */,
 				5CFFFEB428A66B6A00A9F8CE /* SceneDelegate.swift */,
 				5CFFFEB628A66B6A00A9F8CE /* LoginViewController.swift */,
+				5CFFFECA28A69B7F00A9F8CE /* LoginVC+Layout.swift */,
 				5CFFFEC628A681F200A9F8CE /* WelcomeViewController.swift */,
+				5CFFFECC28A69CFC00A9F8CE /* WelcomeVC+Layout.swift */,
 				5CFFFEBB28A66B6C00A9F8CE /* Assets.xcassets */,
 				5CFFFEBD28A66B6C00A9F8CE /* LaunchScreen.storyboard */,
 				5CFFFEC028A66B6C00A9F8CE /* Info.plist */,
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CFFFEB728A66B6A00A9F8CE /* LoginViewController.swift in Sources */,
+				5CFFFECB28A69B7F00A9F8CE /* LoginVC+Layout.swift in Sources */,
 				5CFFFEC728A681F200A9F8CE /* WelcomeViewController.swift in Sources */,
+				5CFFFECD28A69CFC00A9F8CE /* WelcomeVC+Layout.swift in Sources */,
 				5CFFFEB328A66B6A00A9F8CE /* AppDelegate.swift in Sources */,
 				5CFFFEB528A66B6A00A9F8CE /* SceneDelegate.swift in Sources */,
 			);
